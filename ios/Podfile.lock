@@ -15,6 +15,9 @@ PODS:
     - hermes-engine/Pre-built (= 0.73.2-0)
   - hermes-engine/Pre-built (0.73.2-0)
   - libevent (2.1.12.1)
+  - MetricsReporter (1.2.1):
+    - RSCrashReporter (= 1.0.1)
+    - RudderKit (= 1.4.0)
   - RCT-Folly (2022.05.16.00):
     - boost
     - DoubleConversion
@@ -1031,6 +1034,13 @@ PODS:
     - React-jsi (= 0.73.2-0)
     - React-logger (= 0.73.2-0)
     - React-perflogger (= 0.73.2-0)
+  - RNRudderSdk (1.11.3):
+    - React
+    - Rudder (< 2.0.0, >= 1.24.1)
+  - RSCrashReporter (1.0.1)
+  - Rudder (1.25.1):
+    - MetricsReporter (= 1.2.1)
+  - RudderKit (1.4.0)
   - SocketRocket (0.6.1)
   - Yoga (1.14.0)
 
@@ -1085,12 +1095,17 @@ DEPENDENCIES:
   - React-runtimescheduler (from `../node_modules/react-native/ReactCommon/react/renderer/runtimescheduler`)
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - "RNRudderSdk (from `../node_modules/@rudderstack/rudder-sdk-react-native`)"
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   https://github.com/react-native-tvos/react-native-tvos-podspecs.git:
     - libevent
   trunk:
+    - MetricsReporter
+    - RSCrashReporter
+    - Rudder
+    - RudderKit
     - SocketRocket
 
 EXTERNAL SOURCES:
@@ -1189,6 +1204,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/react/utils"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNRudderSdk:
+    :path: "../node_modules/@rudderstack/rudder-sdk-react-native"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -1201,6 +1218,7 @@ SPEC CHECKSUMS:
   glog: f0ddebfc00a905e9213e37801095a0a705d2e5f6
   hermes-engine: 29bb8a729586679ee5ff576bcd8a1e0291e9ed65
   libevent: a6d75fcd7be07cbc5070300ea8dbc8d55dfab88e
+  MetricsReporter: 99596ee5003c69949ed2f50acc34aee83c42f843
   RCT-Folly: 46220aef278c0f21b248ba3d60d26d2f64bb36e9
   RCTRequired: a7406ea680bd1ddd390e4589dd51333fca278b2f
   RCTTypeSafety: 44a799634b7ef207d56d0a4921015206f0232183
@@ -1241,6 +1259,10 @@ SPEC CHECKSUMS:
   React-runtimescheduler: 8274a1bd8dbe0debd6b14cb57730462e50b434de
   React-utils: 761cab5e6ea0177b9027f63175656ff7381d3d4f
   ReactCommon: 77d77b33653d8538130d5c7dd1975e90da3fc74c
+  RNRudderSdk: 6ca2634203cb9c9294e791195a41b67ef28a0cc6
+  RSCrashReporter: 6b8376ac729b0289ebe0908553e5f56d8171f313
+  Rudder: 34799a1be015f03d7073a919c4b3557cfde428d4
+  RudderKit: f272f9872183946452ac94cd7bb2244a71e6ca8f
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: 0c442268d7b2bd36c9b51297f514eee1392ab2a1
 

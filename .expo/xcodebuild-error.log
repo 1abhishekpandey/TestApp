@@ -1,0 +1,2 @@
+2024-02-15 14:28:03.970 xcodebuild[4572:589837] Writing error result bundle to /var/folders/88/f2c3n5x12yv3ffx0108kbf000000gn/T/ResultBundle_2024-15-02_14-28-0003.xcresult
+xcodebuild: error: The workspace named "TestApp" does not contain a scheme named "MyApp-tvOS". The "-list" option can be used to find the names of the schemes in the workspace.

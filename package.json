@@ -12,6 +12,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@rudderstack/rudder-sdk-react-native": "file:rudderstack-rudder-sdk-react-native-1.11.3.tgz",
     "expo": "^50.0.2",
     "react": "18.2.0",
     "react-native": "npm:react-native-tvos@^0.73.2-0"

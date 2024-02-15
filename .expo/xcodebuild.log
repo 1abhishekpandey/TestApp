@@ -1,0 +1,6 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -workspace /Users/abhishekpandey/Documents/Abhishek/feat/RN_tvOS/TestApp/ios/TestApp.xcworkspace -configuration Debug -scheme MyApp-tvOS -destination id=DF99BDB0-B66E-4DC9-8D5B-E0FC426A87F0
+
+User defaults from command line:
+    IDEPackageSupportUseBuiltinSCM = YES
+
