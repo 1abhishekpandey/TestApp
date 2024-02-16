@@ -137,15 +137,6 @@ const makeAllCalls = () => {
   screen();
   group();
   alias();
-  reset();
-  flush();
-  manualSession();
-  manualSessionWithId();
-  endSession();
-  getSessionId();
-  enableOptOut();
-  disableOptOut();
-  getRudderContext();
 };
 
 function App(): React.JSX.Element {
